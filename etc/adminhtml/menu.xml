@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+	<menu>
+		<add id="Ryker_Brenhouse::theme" title="Brenhouse" module="Ryker_Brenhouse" sortOrder="10" resource="Ryker_Brenhouse::configuration"/>
+
+		<add id="Ryker_Brenhouse::social_network" title="Social Network" module="Ryker_Brenhouse" sortOrder="100" parent="Ryker_Brenhouse::theme" resource="Ryker_Brenhouse::configuration"/>
+		<add id="Ryker_Brenhouse::social" title="Index" module="Ryker_Brenhouse" sortOrder="110" parent="Ryker_Brenhouse::social_network" action="rykerbrenhouse/social/index" resource="Ryker_Brenhouse::configuration"/>
+
+	</menu>
+</config>
